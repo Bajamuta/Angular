@@ -1,0 +1,14 @@
+h1
+{
+    color: darkseagreen;
+}
+
+.bold
+{
+    font-weight: 700;
+}
+
+.noBold
+{
+    font-weight: 100;
+}

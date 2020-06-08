@@ -290,14 +290,32 @@
 </style>
 
 <div class="content" role="main">
-
-
-    <h1>{{ title }} app is running!</h1>
-    <h2>What is your name?</h2>
-    <input type="text" [(ngModel)]="name" />
-    <span>Hello {{ name }}!</span>
-    <hr style="border: 1px solid black; width: 300px;">
-    <app-server></app-server>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>{{ title }} app is running!</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>What is your name?</h2>
+          <input type="text" [(ngModel)]="name" />
+          <br />
+          <span>Hello {{ name }}!</span>
+          <hr style="border: 1px solid black; width: 300px;">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <app-servers></app-servers>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <app-details></app-details>
+        </div>
+      </div>
+    </div>
 
   <!-- Footer -->
   <footer>

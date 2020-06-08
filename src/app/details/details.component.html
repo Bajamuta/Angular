@@ -1,0 +1,18 @@
+<p>details works!</p>
+<p>
+    <button class="btn btn-primary" (click)="toggle()">
+        More details
+    </button>
+</p>
+<div *ngIf="showDetails">
+    <ul>
+        <!-- index starts with 0 !-->
+        <li *ngFor="let logItem of log; let i = index" 
+        [ngClass]="{logItem: i >=4}"
+        [ngStyle]="{color: i === 5 ? 'orange' : 'yellow'}"> 
+            {{ logItem }} 
+        </li>
+    </ul>
+    <app-warning-alert></app-warning-alert>
+    <app-success-alert></app-success-alert>
+</div>

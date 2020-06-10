@@ -3,3 +3,6 @@
 [ngClass]="{bold: status === 'online'}">
     This is server {{ id }} with status: {{ getStatus() }}.
 </p>
+
+<app-server-element *ngFor="let serverElement of serverElements" [element]="serverElement">
+</app-server-element>

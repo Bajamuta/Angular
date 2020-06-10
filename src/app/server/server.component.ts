@@ -10,6 +10,11 @@ export class ServerComponent {
     id: number = 10; //data type not necessary
     status: string = 'offline';
 
+    serverElements = [
+        {type: 'server', name: 'Testserver', content: 'just test!'},
+        {type: 'server', name: 'Testserver2', content: 'just test2!'}
+    ];
+
     constructor()
     {
         this.status = Math.random() >= 0.5 ? 'online' : 'offline';

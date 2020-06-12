@@ -315,6 +315,20 @@
           <app-details></app-details>
         </div>
       </div>
+      <hr>
+      <app-cockpit (serverCreated)="onServerAdded($event)" (blueprintCreated)="onBlueprintAdded($event)"></app-cockpit>
+      <br>
+      <div class="row">
+        <div class="col-xs-12">
+          <app-cockpit-element *ngFor="let element of cockpitElements" [cockpitElem]="element">
+            <div class="panel-heading"> {{ element.name }} </div>
+            <div class="panel-body">
+                <strong *ngIf="element.type === 'server'" style="color: red;"> {{ element.content }} </strong>
+                <em *ngIf="element.type === 'blueprint'" style="color: #125699;"> {{ element.content }} </em>
+            </div>
+          </app-cockpit-element>
+        </div>
+      </div>
 
   <!-- Footer -->
   <footer>

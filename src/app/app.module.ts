@@ -9,6 +9,8 @@ import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { DetailsComponent } from './details/details.component';
 import { ServerElementComponent } from './server/server-element/server-element.component';
+import { CockpitComponent } from './cockpit/cockpit.component';
+import { CockpitElementComponent } from './cockpit-element/cockpit-element.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { ServerElementComponent } from './server/server-element/server-element.c
     WarningAlertComponent,
     SuccessAlertComponent,
     DetailsComponent,
-    ServerElementComponent
+    ServerElementComponent,
+    CockpitComponent,
+    CockpitElementComponent
   ],
   imports: [
     BrowserModule,

@@ -320,8 +320,11 @@
       <br>
       <div class="row">
         <div class="col-xs-12">
-          <app-cockpit-element *ngFor="let element of cockpitElements" [cockpitElem]="element">
-            <div class="panel-heading"> {{ element.name }} </div>
+          <button class="btn btn-secondary" (click)="onChangeFirst()">Change first</button>
+          <app-cockpit-element 
+          *ngFor="let element of cockpitElements" 
+          [cockpitElem]="element" 
+          [name]="element.name"> <!--2 mozliwosci przeslania wlasciwosci name-->
             <div class="panel-body">
                 <strong *ngIf="element.type === 'server'" style="color: red;"> {{ element.content }} </strong>
                 <em *ngIf="element.type === 'blueprint'" style="color: #125699;"> {{ element.content }} </em>

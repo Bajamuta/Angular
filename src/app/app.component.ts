@@ -27,4 +27,9 @@ export class AppComponent {
     });
   }
 
+  onChangeFirst()
+  {
+    this.cockpitElements[0].name = 'Changed!';
+  }
+
 }
